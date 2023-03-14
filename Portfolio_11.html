@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="C:\Users\Aritri Chatterjee\OneDrive\Desktop\portfolio\lms\style.css">
+    <title>Nav1</title>
+    <style>
+                
+        
+
+    </style>
+    
+</head>
+<body>
+    <div class="navbar" style="margin-bottom: 20px;">
+        <div class="navbar-content">
+          <a href="#contact">Contact</a>
+          <a href="#" class="register">REGISTER_User_ecom</a>
+        </div>
+      </div>
+      
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">   
+      
+      <div class="icon-bar">
+        <a class="active" href="#"><i class="fa fa-home"></i></a>
+        <a href="./ecom.html"><i class="fa fa-search"></i></a>
+        <a href="./quiz.html"><i class="fa fa-envelope"></i></a>
+        <a href="./ecom.html"><i class="fa fa-globe"></i></a>
+        <a href="#"><i class="fa fa-trash"></i></a>
+      </div>
+      
+    
+      <section id="Portfolio" style="padding-top: 50px;"> 
+        <h2 style="margin-top: 10px;">Connect with me</h2>
+        <div>
+          <strong> Like poetry? lets go!<br><br></strong>
+          <a href="https://www.amazon.in/dp/B0BRY9SJSL/ref=tsm_1_fb_lk" target="_blank"><button class="btn btn-primary btn-lg btn-3d">Amazon.in</button></a>
+          <strong>Connect me!<br><br></strong>
+          <a href="https://www.linkedin.com/in/aritrichatterjee9/" target="_blank"><button class="btn btn-primary btn-lg btn-3d">LinkedIn</button></a>
+          <a href="https://twitter.com/aritriC99" target="_blank"><button class="btn btn-primary btn-lg btn-3d">Twitter</button></a>
+          <strong> Follow me on Github!</strong>
+          <a href="https://github.com/aritrichatterjee9" target="_blank"><button class="btn btn-primary btn-lg btn-3d">Github_AC</button></a>
+        </div>
+      </section>
+      
+    
+    
+    
+    <!-- <button class="btn btn-primary btn-lg btn-3d" onclick="openNav()">Open Nav</button> -->
+    
+    <style>
+        .btn-3d {
+            box-shadow: 0px 0px 0px rgba(191, 227, 29, 0.2);
+            transition: all 0.6s ease-in-out;
+            transform: perspective(1000px) rotateY(0deg) scale(1);
+            border-radius: 10px;
+                       
+        }
+        
+        .btn-3d:hover {
+            box-shadow: 10px 10px 50px rgba(177, 198, 40, 0.2);
+            transform: perspective(1000px) rotateY(-20deg) scale(1.1);
+        }
+    </style>
+    
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+    
+
+
+
+    <section id="Quiz" style="padding-top:50px;"> 
+        <h2>Quiz_Nav</h2>
+        <p>
+        </p>
+    </section>     
+                 
+        
+    <section id="register" style="padding-top:50px; border: none; opacity: 0.8; background-color: #f2f2f2;" class="rounded-box">
+        <h2>Registration</h2>
+        <p>
+        </p>
+        <form onsubmit="return validateForm()" style="display: align-items; center; text-align: center;">
+            <label style="text-align: center;"><strong>Username_</strong></label>
+            <input type="text" class="t1 textbox" id="username"><br><br>
+            <label style="text-align: center;"><strong>Email@com </strong></label>
+            <input type="text" class="t2 textbox" id="email"><br><br>
+            <input id ="sub_btn" type="submit" value="SUBMIT" style="font-weight: bold; border: none; border-radius: 100px; padding: 10px; box-shadow: 2px 2px gray;">
+        </form>
+    </section>
+    
+    
+    
+    <script>
+    function validateForm() {
+      // Get the values of the username and email fields
+      var username = document.getElementById("username").value;
+      var email = document.getElementById("email").value;
+    
+      // Check if the username field is empty
+      if (username == "") {
+        alert("Please enter a username");
+        return false;
+      }
+    
+      // Check if the email field is empty
+      if (email == "") {
+        alert("Please enter an email address");
+        return false;
+      }
+    
+      // Check if the email address is valid using a regular expression
+      var emailRegex = /\S+@\S+\.\S+/;
+      if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address");
+        return false;
+      }
+    
+      // If all validation checks pass, return true to submit the form
+      return true;
+    }
+    </script>
+        
+</body> 
+</html>

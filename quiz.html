@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="C:\Users\Aritri Chatterjee\OneDrive\Desktop\portfolio\lms\style.css">
+
+  <title>Quiz</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div style="text-align:center;">
+    <div id="login-form">
+        <h1> Login for quiz </h1>
+        <<form>
+            <label>Username: <input type="text" class="t1 textbox" id="username"></label><br><br>
+            <label>Password: <input type="password" class="t2 textbox" id="password"></label><br><br>
+            <input type="button" value="LOGIN" onclick="validateForm()">
+        </form>
+    </div>
+  </div>
+
+  <div id="quiz" style="display: none">
+    <form>
+      
+      <div class="quiz-container">
+        <h1>Quiz</h1>
+        <div class="question">
+          <p>1. Who created Python?</p>
+          <input type="radio" name="question1" value="Steve">Steve
+          <input type="radio" name="question1" value="Marie">Marie
+          <input type="radio" name="question1" value="Guido Van">Guido Van
+
+          <p>2. What is the capital of France?</p>
+          <input type="radio" name="question2" value="Paris">Paris
+          <input type="radio" name="question2" value="Madrid">Madrid
+          <input type="radio" name="question2" value="Rome">Rome    
+          
+          <p>3. What is the cmd keyword to start a server?</p>
+          <input type="radio" name="question3" value="npm">npm
+          <input type="radio" name="question3" value="npm start">npm start
+          <input type="radio" name="question3" value="npm server">npm server    
+
+          <p>4. What is the cmd keyword to change a directory?</p>
+          <input type="radio" name="question4" value="cd">cd
+          <input type="radio" name="question4" value="change dir start">change dir start
+          <input type="radio" name="question4" value="cd//">cd//    
+
+          <p>5. What is the port number where react renders?</p>
+          <input type="radio" name="question5" value="3000">3000
+          <input type="radio" name="question5" value="4000">4000
+          <input type="radio" name="question5" value="6000//">6000
+          
+          <p>6. What is the tag that is mostly used in react?</p>
+          <input type="radio" name="question6" value="div">div
+          <input type="radio" name="question6" value="h1">h1
+          <input type="radio" name="question6" value="h2//">h2
+
+        </div>
+      
+      </div>
+      <div style="text-align:center;" >
+      <input type="button" value="Submit" onclick="showPoints()" style="padding-top: 500 px;">
+    </div>
+    </form> 
+  </div>
+
+  <script>
+    function validateForm() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      if (username == "" || password == "") {
+        alert("Please fill in all fields");
+        return false;
+      }
+      // additional validation checks can be added here
+      login();
+    }
+
+    function login() {
+      // login functionality here
+      var quizContainer = document.getElementById("quiz");
+      quizContainer.style.display = "block";
+      document.getElementById("login-form").style.display = "none";
+    }
+
+    
+  </script>
+</body>
+
+  <script>
+
+    
+
+   
+    function showPoints() {
+        
+        let question1 = document.querySelector('input[name="question1"]:checked').value;
+        let question2 = document.querySelector('input[name="question3"]:checked').value;
+        let question3 = document.querySelector('input[name="question3"]:checked').value;
+        let question4 = document.querySelector('input[name="question4"]:checked').value;
+        let question5 = document.querySelector('input[name="question5"]:checked').value;
+        let question6 = document.querySelector('input[name="question6"]:checked').value;
+        
+        let score = 0;
+        if (question1 === "Guido Van") {
+          score++;
+        }
+        if (question2 === "Paris") {
+          score++;
+        }
+        if (question3 === "npm start") {
+          score++;
+        }
+        if (question4 === "cd") {
+          score++;
+        }
+        if (question5 === "3000") {
+          score++;
+        }
+        if (question6 === "div") {
+          score++;
+        }
+       
+        
+      
+        alert("You scored " + score + " out of 6");
+        showGif();
+    }
+  </script>
+     <script>
+      function showGif() {
+        // Get the quiz container element
+        var quizContainer = document.querySelector('.quiz-container');
+      
+        // Hide the quiz container
+        quizContainer.style.display = 'none';
+      
+        // Create a new image element
+        var gifImg = document.createElement('img');
+      
+        // Set the image source to your desired GIF
+        gifImg.src = 'quizcompleteloop.gif';
+      
+        // Append the image to the body of the page
+        document.body.appendChild(gifImg);
+      }
+      
+      
+     </script>
+</body>
+</html>

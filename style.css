@@ -1,0 +1,128 @@
+body {
+    background-color: #f2f2f2;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: auto;
+    background-image: url('YRu5.gif');
+    background-size: cover;
+
+  }
+  
+  .quiz-container {
+    height: 400px;
+    overflow: auto;
+    padding: 20px;
+    margin: 0;
+    background-color: #15030d;
+    color: #f2f2f2;
+  }
+  
+  .navbar{
+    background-color: rgb(222, 120, 197);
+    position:relative;
+    height: 45px;
+    width:100%;
+  }
+
+  .navbar-content{
+    padding-left: 15px;
+    padding-top: 20px;
+    font-style: 'courier';
+    background-color: #ccb1c8;
+    fon
+   }
+  
+  h1 {
+    text-align: center;
+    color: #ae3a9a;
+  }
+  
+  .question {
+    margin-top: 20px;
+    overflow: auto;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  input[type="button"] {
+    background-color: #af4c95;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 10px;
+ 
+      
+    }
+
+    .navbar {
+      background-color: #222;
+      overflow: hidden;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 999;
+    }
+    
+    .navbar-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      padding: 0 20px;
+    }
+    
+    .navbar-content a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    
+    .navbar-content a:hover {
+      color: #706b6e;
+    }
+    
+    .navbar-content .logo {
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
+    
+    .navbar-content .register {
+      background-color: #aca5ab;
+      color: #222;
+      border-radius: 4px;
+      padding: 8px 16px;
+      transition: background-color 0.3s;
+    }
+    
+    .navbar-content .register:hover {
+      background-color: #353336;
+    }
+      .icon-bar {
+        height: 100%;
+        width: 90px;
+        text-align: center;
+        background-color: #555;
+    }
+    
+    .icon-bar a {
+        padding: 16px;
+        display: block;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 36px;
+        padding-top:75px;
+    }
+    
+    .icon-bar a:hover {
+        background-color: #000;
+    }
+    
+    .active {
+        background-color: #4CAF50;
+    }
+    
+  
+  
+  
